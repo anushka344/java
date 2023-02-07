@@ -21,3 +21,34 @@ public class Main{
         System.out.print(vowel);
     }
 }
+
+
+
+OR
+
+
+import java.util.*;
+class Main{
+    public static void main(String args[]){
+        Scanner str=new Scanner(System.in);
+        String word=str.nextLine();
+        word=word.toLowerCase();
+        char[] ch= word.toCharArray();
+        int v=0;
+        int c=0,d=0;
+        
+        for(int i=0;i<ch.length;i++)
+        {
+            if(ch[i]>='a' && ch[i]<='z')
+            {
+           if(ch[i]=='a'|| ch[i]=='e'||ch[i]=='i'||ch[i]=='o' ||ch[i]=='u')
+           v++;
+           else
+           System.out.println(ch[i]);
+            }
+        }
+        System.out.println("vowels:"+v);
+         
+           
+    }
+}
